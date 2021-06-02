@@ -1,6 +1,5 @@
 // import the react library to write JSX
 import React from "react";
-import ReactDOM from "react-dom";
 
 /* write an arrow function called "NameTag" that returns JSX
 The JSX returned should consist of:
@@ -10,15 +9,13 @@ The JSX returned should consist of:
     - a h2 element with className attribute of "name" and the inner text of your name
 */
 
-const NameTag = () => {
-  return(
+const NameTag = () => (
     <div className = "name-tag"> 
-    <h3 className = "title">"hello"</h3>
-    <p className = "subtitle">"my name is"</p>
-    <h2 className = "name">"Edgar Zapata Garfias"</h2>
+      <h3 className = "title">hello</h3>
+      <p className = "subtitle">my name is</p>
+      <h2 className = "name">Edgar Zapata Garfias</h2>
     </div>
-  )
-};
+  );
 
 /* export our functional component definition to be 
 imported then rendered within another module */
